@@ -1,11 +1,11 @@
-type User = {
+type User6A = {
   readonly _id: string;
   name: string;
   isActive: boolean;
   creditCard?: number; // optional
 };
 
-let myUser: User = {
+let myUser: User6A = {
   _id: "1",
   name: "ABC",
   isActive: false,

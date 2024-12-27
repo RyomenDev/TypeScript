@@ -14,4 +14,3 @@ greeting = "abc";
 
 let num1 = 56; // auto type inference
 
-export {}

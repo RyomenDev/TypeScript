@@ -3,7 +3,7 @@
 * key distinction - type cannot be re-openned to add new properties vs an interface is always extendable 
 */
 
-interface User {
+interface User9B {
   readonly _id: number;
   email: string;
   userId: number;
@@ -11,18 +11,18 @@ interface User {
 }
 
 // re-opening of interface
-interface User {
+interface User9B {
   gitHubToken: string;
 }
 
-const user1: User = {
+const user9_1A: User9B = {
   _id: 12,
   email: "Ab@.com",
   userId: 2211,
   gitHubToken: "Abcde",
 };
 
-interface Admin extends User {
+interface Admin9B extends User9B {
   // inherit User
   role: "admin" | "ta" | "learner";
 }

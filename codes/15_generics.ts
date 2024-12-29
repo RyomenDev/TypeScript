@@ -16,3 +16,20 @@ interface Bottle14 {
 }
 
 identity15B<Bottle14>({ brand: "abc", type: 3 });
+
+
+// ---------
+
+function gerercs15A<T>(products:T[]):T{
+    // some operations
+    return products[3]; // index
+}
+
+const gerercs15B = <T>(products:T[]):=>{
+    return products[3]; // index
+}
+
+const gerercs15C = <T,>(products:T[]):=>{
+    // <T,> also correct - to seperate from tags..
+    return products[3]; // index
+}

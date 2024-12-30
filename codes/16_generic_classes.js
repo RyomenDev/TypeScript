@@ -53,3 +53,26 @@ const quizCart = new Sellable();
 quizCart.addToCart({ name: "TypeScript Basics" });
 const courseCart = new Sellable();
 courseCart.addToCart({ name: "TypeScript Advanced", subject: "Programming" });
+// Define a generic class
+class Box {
+    constructor(value) {
+        this.value = value;
+    }
+    // Method to get the value
+    getValue() {
+        return this.value;
+    }
+    // Method to set the value
+    setValue(value) {
+        this.value = value;
+    }
+}
+// Create instances of the Box class with different types
+const numberBox = new Box(10); // Type is number
+const stringBox = new Box("Hello, World!"); // Type is string
+console.log(numberBox.getValue()); // Output: 10
+numberBox.setValue(20);
+console.log(numberBox.getValue()); // Output: 20
+console.log(stringBox.getValue()); // Output: Hello, World!
+stringBox.setValue("New Value");
+console.log(stringBox.getValue()); // Output: New Value

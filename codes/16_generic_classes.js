@@ -1,4 +1,19 @@
 "use strict";
+/*
+! What is a Generic Class?
+A generic class is a class that can work with any data type (or multiple types) while preserving type safety.
+It allows you to define a class with type parameters, so that the class can be used with different types of data without sacrificing type checking.
+Generics in classes provide flexibility, ensuring that operations performed within the class maintain consistency in terms of types.
+! Why Use Generics in Classes?
+* Reusability:
+A single class can work with different data types, reducing code duplication.
+* Type Safety:
+Ensures that only the expected types are used within the class.
+* Flexibility:
+Allows the class to operate on various types while maintaining specific behaviors and constraints.
+* Avoids Casting:
+You don’t need to cast objects to a certain type since the class automatically knows the type.
+*/
 // Function 16A: Accepts two parameters of generic types T and U
 function func16A(val1, val2) {
     return {

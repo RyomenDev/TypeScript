@@ -17,19 +17,21 @@ interface Bottle14 {
 
 identity15B<Bottle14>({ brand: "abc", type: 3 });
 
-
 // ---------
 
-function gerercs15A<T>(products:T[]):T{
-    // some operations
-    return products[3]; // index
+// Generic function using a named function syntax
+function gerercs15A<T>(products: T[]): T {
+  // Perform some operations if necessary
+  return products[3]; // Returns the element at index 3
 }
 
-const gerercs15B = <T>(products:T[]):=>{
-    return products[3]; // index
-}
+// Generic function using an arrow function with explicit return type
+const gerercs15B = <T>(products: T[]): T => {
+  return products[3]; // Returns the element at index 3
+};
 
-const gerercs15C = <T,>(products:T[]):=>{
-    // <T,> also correct - to seperate from tags..
-    return products[3]; // index
-}
+// Generic function with <T,> syntax to separate it from JSX tags
+const gerercs15C = <T>(products: T[]): T => {
+  // Perform some operations if necessary
+  return products[3]; // Returns the element at index 3
+};
